@@ -6,7 +6,7 @@ import { Card } from '../../models/card.model';
 
 @Injectable({ providedIn: 'root' })
 export class CardService {
-  private base = 'http://localhost:3000/cards';
+  private base = 'https://crud-cards-app.onrender.com/cards';
   constructor(private http: HttpClient) { }
 
 
