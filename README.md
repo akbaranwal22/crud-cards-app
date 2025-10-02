@@ -18,6 +18,7 @@ npm start
 
 ## Features
 - Tasks are displayed as cards in a responsive CSS grid.
+- Fully responsive design – the UI adapts and works seamlessly on both desktop and mobile devices.
 - Load data from a mock REST API (json-server).
 - Users can add tasks with title and optional description.
 - Each card has a delete icon for removing tasks. Supports optimistic UI + API call.
@@ -25,6 +26,8 @@ npm start
 - Users can navigate and add tasks using the keyboard (Enter key).
 - Smooth animations for adding/removing cards, works on desktop and mobile.
 - Inputs and buttons include ARIA attributes for better accessibility.
+- Deploy the UI in Netlify - https://crud-card-app.netlify.app/
+- Create one serve file under BackEnd folder and Deploy the json server in render.
 
 ## Mock API
 - File: mock/db.json

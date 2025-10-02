@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Task List</h1>
+    <h1>Add Task</h1>
 
     <div class="add-row">
         <input [(ngModel)]="newTitle" placeholder="Title" aria-label="Title" (keydown.enter)="focusDesc()" />
@@ -11,6 +11,10 @@
     </div>
 
     <div *ngIf="loading" class="loading">Loading...</div>
+
+    <div class="task-list">
+        <h1> List of Task</h1>
+    </div>
 
     <div class="grid" [@listAnimation]="items.length">
         <app-card-item *ngFor="let item of items" [item]="item" (delete)="remove($event)"></app-card-item>
