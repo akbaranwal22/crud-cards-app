@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+        <h3 class="title">{{ item.title }}</h3>
+        <p class="desc">{{ item.description }}</p>
+    </div>
+    <div class="card-actions">
+        <button class="delete-btn" (click)="onDelete()" (keydown.enter)="onDelete()" (keydown.space)="onDelete()"
+            tabindex="0" [attr.aria-label]="'Delete ' + item.title">
+            🗑
+        </button>
+    </div>
+</div>

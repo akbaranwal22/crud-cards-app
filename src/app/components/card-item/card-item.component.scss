@@ -1,0 +1,32 @@
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display:flex;
+    flex-direction:column;
+    min-height:100px;
+    position: relative;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+  
+  .card-body { flex:1; }
+  .title { margin:0 0 .4rem 0; font-size: 1.05rem; }
+  .desc { margin:0; color: #444; font-size: .92rem; }
+  
+  .card-actions {
+    display:flex;
+    justify-content:flex-end;
+    margin-top: 8px;
+  }
+  .delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+  .delete-btn:hover { background: rgba(255,0,0,0.06); }
+  
